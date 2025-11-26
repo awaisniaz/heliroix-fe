@@ -39,7 +39,7 @@ export default async function RootLayout({
           <div className="bg-black h-full overflow-hidden">
         {/* <Header data={sectionData?.header} setting={sectionData?.siteSetting} /> */}
         <div className="w-full max-w-[1920px] mx-auto xl:px-[52px] px-[26px] md:px-8 lg:px-12">
-           <NavBar setting={sectionData?.siteSetting} />
+           {/* <NavBar setting={sectionData?.siteSetting} /> */}
         </div>
         {children}
          <HomePageFooter
