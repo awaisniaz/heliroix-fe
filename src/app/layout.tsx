@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./index.css";
-import { getData } from "./lib/apiClient";
+import { getData, getDataForBuild } from "./lib/apiClient";
 import { HOME_QUERY } from "./Queries/query";
 import Header from "./components/header";
 import HomePageFooter from "./components/homepagefooter";
@@ -24,7 +24,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const data1 = await getData(HOME_QUERY);
+  const data1 = await getDataForBuild(HOME_QUERY);
     console.log(data1?.data?.pages?.nodes[0]);
     const sectionData = data1?.data?.pages?.nodes[0];
   return (
