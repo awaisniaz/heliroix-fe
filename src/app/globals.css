@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+}
+@theme {
+  /* COLORS */
+  --color-primary: oklch(86.3%, 36.25%, 166.494%);
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-text {
+  color: white;
+  font-size: 120px;
+  line-height: 97%;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 30px;
+    line-height: 121%;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .aiSolutions-text {
+    font-size: 24px !important;
+    width: 915px !important;
+    margin-left: 53px !important;             
+  }
+}
+@media (min-width: 1024px) {
+    .lg\:text-\[50px\]\/\[130\%\] {
+        font-size: 50px !important;
+        line-height: 130% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:w-\[483px\] {
+        width: 483px !important;
+    }
+}
+
+
+
+
+ /* My custom Codes */
+ .menu__icon {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+.line {
+  transition: transform 0.18s cubic-bezier(0.04, 0.04, 0.12, 0.96),
+    opacity 0.15s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1s;
+  transform-origin: center;
+}
+.line.top {
+  transform-origin: 50% 50%;
+}
+
+.line.bottom {
+  transform-origin: 50% 50%;
+}
+.menu__icon.active .line.top {
+  transform: rotate(45deg) translateY(5.5px);
+}
+
+.menu__icon.active .line.bottom {
+  transform: rotate(-45deg) translateY(-5.5px);
+}
+.my-action-btn{
+  cursor:  pointer !important;
+}
+.automation-description{
+  margin-top: 10px !important;
+}
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 30px;
+        line-height: 121%;
+        width: 100%;
+    }
+}
+@media (max-width:768px){
+.sub-text{
+  line-height: 1.4;
+  font-size: 16px !important;
+}
+.automation-description{
+  font-size: 18px !important;
+  margin-top: 0px !important;
+}
+}
+
+
