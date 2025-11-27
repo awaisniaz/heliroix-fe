@@ -11,6 +11,7 @@ import HomePageFooter from "./components/homepagefooter";
 import { HOME_QUERY } from "./Queries/query";
 import { client } from "./lib/graphqlClient";
 import { getData } from "./lib/apiClient";
+import NavBar from "./components/reusable/NavBar";
 
 export async function generateMetadata() {
   const data = await getData(HOME_QUERY);
@@ -46,6 +47,9 @@ export default async function Home() {
   return (
     <>
       <div className="bg-black h-full overflow-hidden">
+        <div className="w-full max-w-[1920px] mx-auto xl:px-[52px] px-[26px] md:px-8 lg:px-12">
+           <NavBar setting={sectionData?.siteSetting} />
+        </div>
         <Header data={sectionData?.header} setting={sectionData?.siteSetting} />
         <TechnologySection
           data={sectionData?.trustedPartnersSectionFields}
@@ -57,6 +61,10 @@ export default async function Home() {
         <FutureOfAutomation data={sectionData?.future} />
         <AISolutions data={sectionData?.aiSolutions} />
         <CalculateAutomation data={sectionData?.automationRoi} />
+         <HomePageFooter
+          data={sectionData?.footer}
+          automation={sectionData?.automationRoi}
+        />
       </div>
     </>
   );
