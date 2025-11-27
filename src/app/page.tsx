@@ -14,6 +14,7 @@ import { getData } from "./lib/apiClient";
 import NavBar from "./components/reusable/NavBar";
 
 export async function generateMetadata() {
+  return
   const data = await getData(HOME_QUERY);
   const seo = data?.data?.pages?.nodes?.[0]?.seo;
 
