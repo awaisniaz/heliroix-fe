@@ -50,8 +50,8 @@ export default async function Home() {
         <div className="w-full max-w-[1920px] mx-auto xl:px-[52px] px-[26px] md:px-8 lg:px-12">
            {/* <NavBar setting={sectionData?.siteSetting} /> */}
         </div>
-        <Header data={sectionData?.header} setting={sectionData?.siteSetting} />
-        <TechnologySection
+        {/* <Header data={sectionData?.header} setting={sectionData?.siteSetting} /> */}
+        {/* <TechnologySection
           data={sectionData?.trustedPartnersSectionFields}
           technology={sectionData?.technologyFrameworkSection}
         />
@@ -64,7 +64,7 @@ export default async function Home() {
          <HomePageFooter
           data={sectionData?.footer}
           automation={sectionData?.automationRoi}
-        />
+        /> */}
       </div>
     </>
   );

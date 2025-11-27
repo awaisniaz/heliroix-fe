@@ -18,7 +18,7 @@ export default async function Page() {
   );
   return (
     <div className="bg-black">
-      <div className="w-full max-w-[1920px] mx-auto xl:px-[52px] px-[26px] md:px-8 lg:px-12">
+      {/* <div className="w-full max-w-[1920px] mx-auto xl:px-[52px] px-[26px] md:px-8 lg:px-12">
                  <NavBar setting={sectionData?.siteSetting} />
               </div>
       
@@ -30,7 +30,7 @@ export default async function Page() {
        <HomePageFooter
                 data={sectionData?.footer}
                 automation={sectionData?.automationRoi}
-              />
+              /> */}
       
     </div>
   );
