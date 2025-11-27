@@ -41,9 +41,9 @@ export async function generateMetadata() {
   };
 }
 export default async function Home() {
-  const data1 = await getData(HOME_QUERY);
-  console.log(data1?.data?.pages?.nodes[0]);
-  const sectionData = data1?.data?.pages?.nodes[0];
+  // const data1 = await getData(HOME_QUERY);
+  // console.log(data1?.data?.pages?.nodes[0]);
+  // const sectionData = data1?.data?.pages?.nodes[0];
   return (
     <>
       <div className="bg-black h-full overflow-hidden">
