@@ -48,7 +48,7 @@ export default async function Home() {
     <>
       <div className="bg-black h-full overflow-hidden">
         <div className="w-full max-w-[1920px] mx-auto xl:px-[52px] px-[26px] md:px-8 lg:px-12">
-           <NavBar setting={sectionData?.siteSetting} />
+           {/* <NavBar setting={sectionData?.siteSetting} /> */}
         </div>
         <Header data={sectionData?.header} setting={sectionData?.siteSetting} />
         <TechnologySection
